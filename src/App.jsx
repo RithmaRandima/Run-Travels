@@ -2,6 +2,7 @@ import React from "react";
 import Topbar from "./components/Topbar";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import Activites from "./components/Activites";
 
 const App = () => {
   return (
@@ -9,6 +10,7 @@ const App = () => {
       <Topbar />
       <Navbar />
       <Hero />
+      <Activites />
     </div>
   );
 };
