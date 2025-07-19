@@ -2,7 +2,10 @@ import React from "react";
 
 const Booking = () => {
   return (
-    <div id="deals" className="max-w-[1140px] m-auto  w-full p-4">
+    <div
+      id="deals"
+      className="max-w-[1140px] m-auto  w-full p-4 mt-[20px] md:mt-[50px] bg-amber-300 md:rounded-3xl"
+    >
       <form className="lg:flex lg:justify-between w-full items-center">
         <div className="flex flex-col my-2 py-2">
           <label>Destination</label>
@@ -24,9 +27,11 @@ const Booking = () => {
             <input type="date" className="border rounded-md p-2" />
           </div>
         </div>
-        <div className="flex flex-col my-2 p-2 w-full">
-          <label>Search</label>
-          <button className="w-full">Rates $ Availability</button>
+        <div className="my-2 p-2 w-full md:w-[50%]">
+          {/* <label>Search</label> */}
+          <button className="w-full bg-black h-[70px] md:h-[40px] md:mt-[20px] text-white font-bold">
+            Rates $ Availability
+          </button>
         </div>
       </form>
     </div>

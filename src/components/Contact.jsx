@@ -1,13 +1,16 @@
 import React from "react";
+import contactImg from "../assets/contact.jpeg";
 
 const Contact = () => {
   return (
     <div id="contact" className="max-w-[1140px] m-auto w-full p-4 py-16">
-      <h2 className="text-center text-gray-700">Send a Messages</h2>
-      <p className="text-center text-gray-700 py-2">We're Standing by</p>
+      <h2 className="text-center text-gray-700 font-bold">Send a Messages</h2>
+      <p className="text-center text-shadow-black p-4 pt-0 font-bold text-amber-300 text-[40px]">
+        We're Standing by
+      </p>
       <div className="grid md:grid-cols-2">
         <img
-          src="https://cdn.pixabay.com/photo/2019/10/14/22/58/monkeys-4550159_1280.jpg"
+          src={contactImg}
           alt=""
           className="w-full md:h-full object-cover p-2 max-h-[500px] h-[200px]"
         />
@@ -27,7 +30,9 @@ const Contact = () => {
               cols={30}
               rows={10}
             ></textarea>
-            <button className="col-span-2 m-2">Submit</button>
+            <button className="col-span-2 m-2 bg-black px-6 py-1 font-bold text-white">
+              Submit
+            </button>
           </div>
         </form>
       </div>

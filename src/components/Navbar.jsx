@@ -16,27 +16,30 @@ const Navbar = () => {
     setNav(!nav);
   };
   return (
-    <div className="w-full min-h-[50px] flex justify-between items-center absolute z-10 text-white bg-gray-700/80">
-      <ul className="hidden sm:flex px-4">
-        <li>
-          <a href="/">Home</a>
-        </li>
-        <li>
-          <a href="#gallery">Gallery</a>
-        </li>
-        <li>
-          <a href="#deals">Deals</a>
-        </li>
-        <li>
-          <a href="#contact">Contact</a>
-        </li>
-      </ul>
-      <div className="flex justify-between">
-        <FaFacebook className="mx-4" />
-        <FaInstagram className="mx-4" />
-        <FaTwitter className="mx-4" />
-        <FaGooglePlus className="mx-4" />
+    <div>
+      <div className="w-full min-h-[50px] flex justify-between items-center absolute z-10 text-white bg-gray -700/80 ">
+        <ul className="hidden sm:flex px-4 justify-between w-[40%] font-bold text-amber-300">
+          <li className="">
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="#gallery">Gallery</a>
+          </li>
+          <li>
+            <a href="#deals">Deals</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+        <div className="flex justify-between ">
+          <FaFacebook className="mx-4" />
+          <FaInstagram className="mx-4" />
+          <FaTwitter className="mx-4" />
+          <FaGooglePlus className="mx-4" />
+        </div>
       </div>
+
       {/* hamburgar Icon */}
       <div onClick={handelNav} className="sm:hidden z-10">
         {nav ? (
